@@ -1,0 +1,1066 @@
+/*Home Page!*/
+
+body{
+    scroll-behavior: smooth;
+    overflow:auto;
+    margin-bottom: 0;
+}
+
+#logo{
+    display: flex;
+    width: 180vw;
+    overflow: visible;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#printmaking{
+    display: flex;
+    position: absolute;
+    overflow: visible;
+    left: 44vw ;
+    top: 47vh ;
+    width: 45vw;
+    max-width: 45vw;
+    height: auto;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating{
+    animation: float 5s ease-in-out infinite;
+    display: flex;
+    width: 10%;
+    z-index: 1;
+    position: relative;
+    overflow: visible;
+    left: 70vw;
+    top: -10vh;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+@font-face {
+    font-family: "Swiss";
+    src: url("fonts/Swiss\ 911\ Compressed\ Regular.otf");
+}
+
+@font-face {
+    font-family: "AppareoB";
+    src: url("fonts/Appareo-Black.ttf");
+}
+
+#about{
+    pointer-events: none ;
+    display: flex;
+    font-family: "AppareoB";
+    font-size: 1.5vw;
+    letter-spacing: 4px;
+    text-align: justify;
+    position: relative;
+    width: 30vw ;
+    top: 25vh;
+    left: 15vw;
+    max-width:max-content ;
+}
+
+#pom{
+  width: 10vw;
+  position: relative;
+  left: 12vw;
+  top: -21.5vh;
+  z-index: -1;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+#history{
+    width: 10vw;
+    position: relative;
+    left: 52.5vw;
+    top: -5vh;
+    transition: ease-in .3s;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+#hist{
+  width: 25vw;
+  position: relative;
+  left: 55vw;
+  top: -48vh;
+  animation: spin 20s infinite linear;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+ }
+
+ #history:hover{
+    transform: scale(1.1);
+ }
+
+.cursor{
+    font-family: "AppareoB";
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+    left: -17vw; 
+    top: -70vh;
+}
+
+.typewriter-animation {
+  animation: 
+    typewriter 7s steps(80) .5s 1 normal both, 
+    blinkingCursor 750ms steps(80) normal infinite;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: transparent; }
+  to { border-right-color: transparent; }
+}
+
+
+#istar{
+  width: 25vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: 5vw;
+  top: -10vh;
+  z-index: 0;
+} 
+
+#prin{
+  position: relative;
+  font-family: "AppareoB";
+  letter-spacing: 4;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  color:black;
+  top: -35vh;
+  left: -13%;
+  transition: 0.3s ease-in;
+}
+
+#prin:hover{
+transform: scale(1.1);
+color: rgb(255,29, 35);
+}
+
+#corn{
+  width: 15vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: -10vw;
+  top: -5vh;
+  transition: ease-in-out .5s;
+}
+
+#ys{
+  width: 15vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: -50vw;
+  top: -2vh;
+  transition: ease-in-out .5s;
+}
+
+/*History Page!*/
+
+
+#asterisk{
+  width: 5vw;
+  left: 50vw;
+  top: -35vh;
+  position: relative;
+  margin: auto;
+  transition: ease-in-out .4s;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+#asterisk:hover{
+  transform: scale(1.1);
+}
+
+#startwo{
+  width: 25vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: 20vw;
+  top: 45vh;
+  z-index: 1;
+} 
+
+
+#whatis{
+  font-family: "AppareoB";
+  font-size: 1vw;
+  text-align: justify;
+  width: 40vw;
+  position: relative;
+  letter-spacing: 5px;
+  top: -27vh;
+  left: 5vw;
+  z-index: 2;
+}
+
+#china{
+  width: 25vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: 5vw;
+  top: -25vh;
+  transition: ease 1s;
+}
+
+#china:hover{
+  transform: scale(.95);
+}
+
+.wh{
+    font-family: "AppareoB";
+    font-size: 2vw;
+    color: rgb(255,29, 35);
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);  
+    top: -100vh;
+    left: -34vw;
+}
+
+.whe{
+    font-family: "AppareoB";
+    font-size: 2vw;
+    color: rgb(255,29, 35);
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);   
+    animation-delay: 800ms;
+    top: -105vh;
+    left: 13vw;
+}
+
+#how{
+  font-family: "AppareoB";
+  font-size: 1vw;
+  text-align: justify;
+  width: 40vw;
+  position: relative;
+  letter-spacing: 5px;
+  top: -55vh;
+  left: 55vw;
+}
+
+#eu{
+  width: 25vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: 68vw;
+  top: -160vh;
+  transition: ease 1s;
+}
+
+#eu:hover{
+  transform: scale(.95);
+}
+
+#star{
+  width: 15vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: 30vw;
+  top: -160vh;
+}
+
+.now{
+    font-family: "AppareoB";
+    font-size: 2vw;
+    color: rgb(255,29, 35);
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    animation-delay: 1600ms;  
+    top: -95vh;
+    left: -5vw;
+}
+
+#nowp{
+  font-family: "AppareoB";
+  font-size: 1vw;
+  text-align: justify;
+  width: 40vw;
+  position: relative;
+  letter-spacing: 5px;
+  top: -96vh;
+  left: 32.5vw;
+}
+
+#modern{
+  width: 25vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: 40vw;
+  top: -100vh;
+  transition: ease 1s;
+}
+
+#modern:hover{
+  transform: scale(.95);
+}
+
+#corner{
+  width: 15vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: 35vw;
+  top: -115vh;
+}
+
+#hg{
+  width: 7vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  position: relative;
+  left: -5vw;
+  top: -145vh;
+}
+
+#myp{
+  position: relative;
+  font-family: "AppareoB";
+  letter-spacing: 4;
+  text-align: center;
+  text-decoration: none;
+  font-size: 45px;
+  color:black;
+  top: -90vh;
+  left: -1%;
+  transition: 0.6s ease;
+}
+
+#myp:hover{
+color: rgb(255,29, 35);
+}
+
+#bt{
+  position: relative;
+  font-family: "AppareoB";
+  letter-spacing: 4;
+  text-align: center;
+  text-decoration: none;
+  font-size: 45px;
+  color:black;
+  top: -78vh;
+  left: -12vw;
+  transition: 0.6s ease;
+}
+
+#bt:hover{
+ color: rgb(255,29, 35);
+}
+
+/*Prints Page!*/
+ 
+#paperone{
+  width: 10vw;
+  position: relative;
+  top: 1vh;
+}
+
+#papertwo{
+  width: 25vw;
+   position: relative;
+   z-index: 1;
+}
+
+#paperthree{
+  width: 7vw;
+   position: relative;
+   top: -19vh;
+   left: 1vw;
+ z-index: 1;
+}
+
+#paperfour{
+  width: 6vw;
+   position: relative;
+   top: -9vh;
+}
+
+#paperfive{
+  width: 22vw;
+   position: relative;
+   left: 1vw;
+}
+
+#papersix{
+  width: 12vw;
+   position: relative;
+  rotate: 41deg;
+  left: -36vw;
+  top: 12vh;
+  z-index: -1;
+}
+
+#paperseven{
+  width: 14vw;
+   position: relative;
+   left: 76vw;
+   top: -50vh;
+   rotate: 35deg;
+}
+
+#papereight{
+  width: 12vw;
+   position: relative;
+   left: 69vw;
+   top: -54vh;
+   rotate: -27deg;
+   z-index: -1;
+}
+
+#papernine{
+  width: 8vw;
+   position: relative;
+   rotate: 17deg;
+   top: -13vh;
+   left: 12.5vw;
+}
+
+#paperten{
+  width: 8vw;
+   position: relative;
+   top: -40vh;
+   left: 17.7vw;
+   z-index: 1;
+   rotate: -40deg;
+}
+
+#papereleven{
+  width: 12vw;
+   position: relative;
+   top: -32vh;
+   left: 36vw;
+   rotate: -28deg;
+}
+
+#papertwelve{
+  width: 20vw;
+   position: relative;
+   top: -8vh;
+   left: -55vw;
+}
+
+#paperthirteen{ 
+  width: 12vw;
+   position: relative;
+   top: 1vh;
+   left:11vw;
+}
+
+#paperfourteen{
+  width: 8vw;
+   position: relative;
+   top: -23vh;
+   left: -38vw;
+}
+
+#paperfifteen{
+  width: 17vw;
+   position: relative;
+   top: -10vh;
+   left: 33vw;
+}
+
+#papersixteen{
+  width: 8vw;
+   position: relative;
+   top: -46vh;
+   left: 41vw;
+}
+
+#paperseventeen{
+  width: 10vw;
+   position: relative;
+   top: -30vh;
+   left: -13vw;
+}
+
+#papereighteen{
+  width: 8vw;
+   position: relative;
+   top: -39vh;
+   left: 37vw;
+}
+
+#papertwenty{
+  width: 13vw;
+   position: relative;
+   top: -85vh;
+   left: -42vw;
+}
+
+#papertwentyone{
+  width: 6vw;
+   position: relative;
+   top: -49vh;
+   left: 9.5vw;
+   rotate: 12deg;
+}
+
+#papertwentytwo{
+  width: 6vw;
+   position: relative;
+   top: -30vh;
+   left: -58vw;
+   rotate: 12deg;
+}
+
+#papertwentythree{
+  width: 6vw;
+   position: relative;
+   top: -48vh;
+   left: 23vw;
+   rotate: -12deg;
+   z-index: -1;
+}
+
+#papertwentyfour{
+  width: 8vw;
+   position: relative;
+   top: -15vh;
+   left: -11vw;
+   rotate: 12deg;
+}
+
+#papertwentyfive{
+  width: 6vw;
+   position: relative;
+   top: -92vh;
+   left: -58vw;
+   rotate: -12deg;
+}
+
+#papertwentysix{
+  width: 11vw;
+   position: relative;
+   top: -135vh;
+   left: 5vw;
+   rotate: -16deg;
+}
+
+#papertwentyseven{
+  width: 7vw;
+   position: relative;
+   top: -1184vh;
+   left: -29vw;
+   rotate: -39deg;
+}
+
+#papertwentyeight{
+  width: 7vw;
+   position: relative;
+   top: -114vh;
+   left: -38vw;
+   rotate: 29deg;
+}
+
+#papertwentynine{
+  width: 6vw;
+   position: relative;
+   top: -135vh;
+   left: -5vw;
+   rotate: -38deg;
+}
+
+#paperthirty{
+  width: 8vw;
+   position: relative;
+   top: 32vh;
+   left: 48vw;
+   rotate: -38deg;
+}
+
+#paperthirtyone{
+  width: 6vw;
+   position: relative;
+   top: -4vh;
+   left: 52vw;
+   rotate: -38deg;
+}
+
+#paperthirtytwo{
+  width: 10vw;
+   position: relative;
+   top: 15vh;
+   left: 27vw;
+   rotate: -38deg;
+}
+
+#paperthirtythree{
+  width: 9vw;
+   position: relative;
+   top: -9vh;
+   left: 22vw;
+   rotate: -38deg;
+   z-index: -1;
+}
+
+#paperthirtyfour{
+  width: 18vw;
+   position: relative;
+   top: -22vh;
+   left: -15vw;
+   rotate: -8deg;
+}
+
+.printone{
+	position: absolute;
+  top: 65vh;
+  left: 57vw;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.printtwo{
+	position: absolute;
+  left: 6vw;
+  top:75vh;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.printthree{
+	position: absolute;
+  left: 24vw;
+  top: 38vh;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+@-webkit-keyframes pulse-grow-on-hover {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes pulse-grow-on-hover {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.pulse-grow-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse-grow-on-hover:hover, .pulse-grow-on-hover:focus, .pulse-grow-on-hover:active {
+  -webkit-animation-name: pulse-grow-on-hover;
+  animation-name: pulse-grow-on-hover;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+#ast{ 
+  width: 5vw;
+    position: relative;
+    left: 50vw;
+    top: -23vh;
+    z-index: 2;
+    transition: ease-in .3s;
+    filter: drop-shadow (5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+#ast:hover{
+  transform: scale(1.1);
+}
+
+/* Print One! */
+
+.section{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.full-height{
+  min-height: 100vh;
+}
+.over-hide{
+  overflow: hidden;
+}
+.padding-tb{
+  padding: 100px 0;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-top: -50px;
+  left: 30vw;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(46,73,146);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  background-image: url(img/black.png);
+}
+.checkbox.scnd + label{
+  background-image: url(img/red.png);
+}
+.checkbox.thrd + label{
+  background-image: url(img/green.png);
+}
+
+.checkbox:checked + label{
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.3);
+  transform: scale(1.3);
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.slider-height-padding {
+  padding-top: 440px;
+}
+
+ul {
+  position: absolute;
+  top: 0;
+  left: 2vw;
+  display: block;
+  width: 65%;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  list-style: none;
+}
+ul li {
+  position: absolute;
+  top: 0;
+  left: 2w;
+  width: 65%;
+  display: block;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  list-style: none;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(img/printone.png);
+  border-radius: 50%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 2.7;
+  color: #343434;
+  writing-mode: vertical-rl;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 8px 25px 0 rgba(16,39,112,.1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+ul li span {
+  mix-blend-mode: difference;
+}
+ul li:nth-child(2) {
+  background-image: url(img/printoner.png);
+}
+ul li:nth-child(3) {
+  background-image: url(img/printoneg.png);
+}
+
+.checkbox.frst:checked ~ ul li:nth-child(1) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.scnd:checked ~ ul li:nth-child(2) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+.checkbox.thrd:checked ~ ul li:nth-child(3) {
+  opacity: 1;
+  pointer-events: auto;
+  border-radius: 16px;
+}
+
+@media (max-width: 767px) {
+  .slider-height-padding {
+    padding-top: 340px;
+  }
+  ul li {
+    height: 300px;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider-height-padding {
+    padding-top: 240px;
+  }
+  ul li {
+    height: 200px;
+  }
+}
+
+.title{
+   font-family: "AppareoB";
+    font-size: 4vw;
+    color: rgb(255,29, 35);
+    position: relative;
+    margin: 0 auto;
+    letter-spacing: 5px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    top: -87vh;
+    left: 8vw;
+}
+
+#des{
+  font-family: "AppareoB";
+  font-size: 1.25vw;
+  text-align: justify;
+  width: 30vw;
+  position: relative;
+  letter-spacing: 5px;
+  top: -95vh;
+  left: 46vw;
+}
+
+#pstar{
+  width: 30vw;
+  position: relative;
+  top: -98vh;
+  left: 51vw;
+}
+
+#nextp{
+  width: 8vw;
+  position: relative;
+  top: -108vh;
+  left: 47vw;
+  transition: ease .4s;
+}
+
+#nextp:hover{
+  transform: scale(1.1);
+}
+
+#prevp{
+  width: 8vw;
+  position: relative;
+  top: -108vh;
+  left: 30vw;
+  transform: scale(-1);
+  transition: ease .4s;
+}
+
+#prevp:hover{
+  transform: scale(-1.1);
+}
+
+
+#pprice{
+  width: 10vw;
+  position: relative;
+  top: -100vh;
+  left: 15vw;
+  z-index: -1;
+}
+
+.cart-button {
+	position: relative;
+  top: -147vh;
+  left: -11vw;
+	padding: 5px;
+	width: 165px;
+	height: 70px;
+	border: 0;
+	border-radius:10px;
+	background-color: rgb(46,73,146);
+	outline: none;
+  font-family: "AppareoB";
+  font-size: 22px;
+	cursor: pointer;
+	color: #fff;
+	transition: .1s ease-in-out;
+	overflow: hidden;
+}
+.cart-button:hover {
+	background-color: #rgb(46,73,146);
+}
+.cart-button:active {
+	transform: scale(1.1);
+}
+
+.cart-button .fa-shopping-cart {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: -10%;
+	font-size: 2em;
+	transform: translate(-50%,-50%);
+}
+.cart-button .fa-box {
+	position: absolute;
+	z-index: 3;
+	top: -20%;
+	left: 52%;
+	font-size: 1.2em;
+	transform: translate(-50%,-50%);
+}
+.cart-button span {
+	position: absolute;
+	z-index: 3;
+	left: 50%;
+	top: 50%;
+	font-size: 1.2em;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+.cart-button span.add-to-cart {
+	opacity: 1;
+}
+.cart-button span.added {
+	opacity: 0;
+}
+
+.cart-button.clicked .fa-shopping-cart {
+	animation: cart .75s ease-in-out forwards;
+}
+.cart-button.clicked .fa-box {
+	animation: box .75s ease-in-out forwards;
+}
+.cart-button.clicked span.add-to-cart {
+	animation: txt1 .75s ease-in-out forwards;
+}
+.cart-button.clicked span.added {
+	animation: txt2 .75s ease-in-out forwards;
+}
+@keyframes cart {
+	0% {
+		left: -10%;
+	}
+	40%, 60% {
+		left: 50%;
+	}
+	100% {
+		left: 110%;
+	}
+}
+@keyframes box {
+	0%, 40% {
+		top: -20%;
+	}
+	60% {
+		top: 40%;
+		left: 52%;
+	}
+	100% {
+		top: 40%;
+		left: 112%;
+	}
+}
+@keyframes txt1 {
+	0% {
+		opacity: 1;
+	}
+	20%, 100% {
+		opacity: 0;
+	}
+}
+@keyframes txt2 {
+	0%, 80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#hom{ 
+  width: 5vw;
+    position: relative;
+    left: 48vw;
+    transition: ease-in .3s;
+    filter: drop-shadow (5px 5px 5px rgba(0, 0, 0, 0.3));
+    margin-bottom: -5vh;
+}
+
+#hom:hover{
+  transform: scale(1.1);
+}
